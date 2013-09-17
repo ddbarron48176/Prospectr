@@ -1,7 +1,8 @@
 ## Prospectr
+www.prospectr.co
 
 
-* This application was created for a sales organization to find contacts though linkedin, veryify email, and check twitter news
+* This application was created for a sales organization to find contacts though LinkedIn, verify email, and check twitter news
 
 ### How to use the Prospectr
 
