@@ -1,0 +1,15 @@
+<div ng-hide="twitterResults.loaded" class="text-center">
+  <%= render :partial => 'home/google/result_loading' %>
+</div>
+<div class="row-fluid">
+  <div class="span6">
+    <div ng-show="twitterResults.loaded" ng-repeat="result in twitterResults.data | pagination:twitterResults.doublePerPage:twitterResults.doubleCurrentPage()">
+      <%= render :partial => 'home/twitter/feed_entry' %>
+    </div>
+  </div>
+  <div class="span6">
+    <div ng-show="twitterResults.loaded" ng-repeat="result in twitterResults.data | pagination:twitterResults.doublePerPage:twitterResults.doubleNextPage()">
+      <%= render :partial => 'home/twitter/feed_entry' %>
+    </div>
+  </div>
+</div>
